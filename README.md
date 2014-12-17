@@ -1,4 +1,4 @@
-miw-website
+mvidalgarcia.github.io
 ===========
 
-My personal web-site for the Web Engineering Master at University of Oviedo. Use to upload documents about the subjects of the master.
+My personal [website](mvidalgarcia.github.io). Used to provide personal information about me and my career.
