@@ -1,0 +1,20 @@
+{
+    "header" : {
+      "home": "HOME",
+      "cv": "CV"
+    },
+    "lang": {
+      "english": "Inglés",
+      "spanish": "Español"
+    },
+    "personal": {
+      "profession": "Ingeniero Informático"
+    },
+    "body": {
+      "building": "Construyendo..."
+    },
+    "footer": {
+      "aboutme": "Sobre mí",
+      "construction": "En construcción"
+    }
+}

@@ -14,7 +14,7 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>	
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,7 +34,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">HOME</a>
+          <a class="navbar-brand" href="index.html" data-i18n="header.home"></a>
+          <a class="navbar-brand" href="index.html" data-i18n="header.cv"></a>
+        </div>
+        <div class="navbar-right">
+        	<a class="navbar-brand lang" href="?lang=en" data-i18n="lang.english"></a>
+          	<a class="navbar-brand lang" href="?lang=es" data-i18n="lang.spanish"></a>
         </div>
       </div>
     </div>
@@ -46,7 +51,7 @@
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<img src="assets/img/user.png" alt="Marco">
 					<h1>Marco Vidal García</h1>
-					<h3>Computer Engineer<h3>
+					<h3 data-i18n="personal.profession"><h3>
 					<h5>
 						<p><a href="mailto:marcovidal67@gmail.com">marcovidal67@gmail.com</a> · 
 						<a href="https://github.com/mvidalgarcia">GitHub</a></p>
@@ -60,7 +65,7 @@
 	<!-- +++++ Projects Section +++++ -->
 	
 	<div class="container pt">
-		<h2>Building...</h2>	
+		<h2 data-i18n="body.building"></h2>	
 		<a href="#">Link test</a><br/>
 	</div><!-- /container -->
 	
@@ -93,8 +98,8 @@
 				-->
 				
 				<div class="col-lg-4">
-					<h4>About Me</h4>
-					<p>Under construction</p>
+					<h4 data-i18n="footer.aboutme"></h4>
+					<p data-i18n="footer.construction"></p>
 				</div><!-- /col-lg-4 -->
 			
 			</div>
@@ -107,5 +112,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/i18next-latest.min.js"></script>
+    <script src="assets/js/i18n-settings.js"></script>
+
   </body>
 </html>
