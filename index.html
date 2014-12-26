@@ -26,7 +26,7 @@
   <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -34,13 +34,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" data-i18n="header.home"></a>
-          <a class="navbar-brand" href="assets/cv/cv-basic-eng-v3.pdf" data-i18n="header.cv"></a>
         </div>
-        <div class="navbar-right">
-        	<a class="navbar-brand lang" href="?lang=en" data-i18n="lang.english"></a>
-          	<a class="navbar-brand lang" href="?lang=es" data-i18n="lang.spanish"></a>
-        </div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a class="navbar-brand" href="index.html" data-i18n="header.home"></a></li>
+				<li><a class="navbar-brand" href="assets/cv/cv-basic-eng-v3.pdf" data-i18n="header.cv"></a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+        		<li class="dropdown">
+        			<a href="#" class="dropdown-toggle navbar-brand lang append-caret" data-toggle="dropdown" role="button" aria-expanded="false" data-i18n="lang.language"></a>
+        			<ul class="dropdown-menu" role="menu">
+        				<li><a class="navbar-brand lang" href="?lang=en" data-i18n="lang.english"></a></li>
+          				<li><a class="navbar-brand lang" href="?lang=es" data-i18n="lang.spanish"></a></li>
+          			</ul>
+          		</li>
+        	</ul>
+		</div>
+
+        
+          
+        
       </div>
     </div>
 

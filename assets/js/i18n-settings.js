@@ -7,4 +7,5 @@ $.i18n.init({
     }, function(t) {
     	
     	$('html').i18n();
+    	$(".append-caret").append(" <span class=\"caret\"></span>")
     });
