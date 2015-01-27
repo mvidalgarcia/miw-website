@@ -13,9 +13,5 @@
     },
     "body": {
       "building": "Building..."
-    },
-    "footer": {
-    	"aboutme": "About me",
-    	"construction": "Under construction"
     }
 }

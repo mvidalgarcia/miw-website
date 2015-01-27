@@ -12,9 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>	
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,13 +63,32 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
-					<img src="assets/img/user.png" alt="Marco">
+					<img class="avatar img-circle" src="assets/img/user.png" alt="Marco">
 					<h1>Marco Vidal García</h1>
 					<h3 data-i18n="personal.profession"><h3>
-					<h5>
-						<p><a href="mailto:marcovidal67@gmail.com">marcovidal67@gmail.com</a> · 
-						<a href="https://github.com/mvidalgarcia">GitHub</a></p>
-					</h5>
+					<div class="col-xs-6 col-xs-offset-3 centered">
+						<div class="col-xs-3">
+								<a href="https://github.com/mvidalgarcia">
+									<i class="fa fa-github"></i>
+								</a>
+							</div>
+						<div class="col-xs-3">
+								<a href="http://stackoverflow.com/users/3506161/mvidalgarcia">
+									<i class="fa fa-stack-overflow"></i>
+								</a>
+							</div>
+						
+						<div class="col-xs-3">
+							<a href="https://www.linkedin.com/in/mvidalgarcia">
+								<i class="fa fa-linkedin-square"></i>
+							</a>
+						</div>
+						<div class="col-xs-3">
+							<a href="mailto:marcovidal67@gmail.com">
+								<i class="fa fa-envelope"></i>
+							</a>
+						</div>
+					</div><!-- /col-lg-6 --> 
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
 	    </div> <!-- /container -->
@@ -76,12 +96,12 @@
 	
 	
 	<!-- +++++ Projects Section +++++ -->
-	
+	<!--
 	<div class="container pt">
 		<h2 data-i18n="body.building"></h2>	
 		<a href="#">Link test</a><br/>
-	</div><!-- /container -->
-	
+	</div>
+	-->
 	
 	<!-- +++++ Footer Section +++++ -->
 	
@@ -110,9 +130,8 @@
 
 				-->
 				
-				<div class="col-lg-4">
-					<h4 data-i18n="footer.aboutme"></h4>
-					<p data-i18n="footer.construction"></p>
+				<div class="col-xs-4 col-xs-offset-4 centered">
+					<p>© Marco Vidal García 2015</p>
 				</div><!-- /col-lg-4 -->
 			
 			</div>
