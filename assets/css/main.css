@@ -14,6 +14,7 @@ html {
 	-webkit-background-size: cover;
 }
 
+
 body {
     background-color: transparent;
 	color: white;
@@ -56,23 +57,24 @@ li {
     transform: translateX(-50%) translateY(-50%);
 }
 
+
 .centered {
     text-align: center;
 }
 
 /* Contact button */
 
-.btn-default {
-	border: 0;
+.btn-default:hover {
 	background-color: rgba(255,255,255,1);
 	color: rgba(0,0,0,1);
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.btn-default:hover {
+.btn-default {
+	border: 0;
 	background-color: rgba(255,255,255,0.2);
 	color: white;
 	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Links */
@@ -113,4 +115,44 @@ a:after {
 
 .icons .fa {
 	font-size: 35px;
+}
+
+/* mobile */
+@media only screen and (min-device-width : 200px) and (max-device-width : 775px) {
+	html, body {
+		height: 100%;
+	}
+
+	.main {
+		height: 100%;
+	    width: 100%;
+	    display: table;
+	}
+
+	h1 {
+		margin-top: 1.5em;
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.7em;
+	}
+
+	.container {
+		position: inherit;
+	    top: inherit;
+	    left: inherit;
+	    transform: none;
+	    display: table-cell;
+	    height: 100%;
+    	vertical-align: middle;
+	}
+
+	.icons .fa {
+		font-size: 20px;
+	}
+	
+	li {
+		padding: 0 0.5em;
+	}
 }
