@@ -7,11 +7,12 @@ html {
     ), url(../img/bg.jpg);
     background-repeat: no-repeat;
 	background-position: center center;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 	background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
+	-ms-background-size: cover;
 }
 
 
@@ -54,9 +55,14 @@ li {
 	position: absolute;
     top: 50%;
     left: 50%;
+    width: auto;
+    
+    -ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-
 
 .centered {
     text-align: center;
@@ -78,15 +84,16 @@ li {
 }
 
 /* Links */
+
 a {
     color: rgba(255,255,255,0.7);
     word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
+    -webkit-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -ms-transition: color 0.2s ease-in, background 0.2s ease-in;
+    -o-transition: color 0.2s ease-in, background 0.2s ease-in;
+    transition: color 0.2s ease-in, background 0.2s ease-in;
 }
 
 a:hover,
@@ -95,16 +102,6 @@ a:focus {
     text-decoration: none;
     outline: 0;
 }
-
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-
 
 /* Avatar */
 
@@ -117,7 +114,10 @@ a:after {
 	font-size: 35px;
 }
 
-/* mobile */
+
+
+/*** Mobile ***/
+
 @media only screen and (min-device-width : 200px) and (max-device-width : 775px) {
 	html, body {
 		height: 100%;
