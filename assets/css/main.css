@@ -120,9 +120,12 @@ a:focus {
 
 /*** Mobile ***/
 
-@media only screen and (min-device-width : 200px) and (max-device-width : 775px) {
+@media only screen and (min-device-width : 200px) and (max-device-width : 1150px) {
 	html, body {
 		height: 100%;
+	}
+	body {
+		margin: 1em;
 	}
 
 	.main {
